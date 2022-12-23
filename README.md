@@ -12,6 +12,7 @@ Navigation Bar Wrapping Horizontal, features:
 - Horizontally Wrapping and Expanding menus concept
 - No limit of how many menus can be added, recommendation: 3 - 5 menus
 - Auto adjusting length of navbar according to the number of menus
+- Color the text of menu when mouse hover
 - Easy to resize the navbar, using css
 - Easy to change the color of the web page and all the elements using ":root" CSS
 - Simple but attractive animation
