@@ -1,0 +1,115 @@
+/* Variable of color */
+:root {
+	--primary-color: #666;
+	--secondary-color: #6f88fc;
+	--third-color: #000;
+	--fourth-color: #fefff1;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	background-color: var(--secondary-color);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body,
+.nav,
+.menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav {
+	/* Use transform: scale() to resize the navbar */
+	transform: scale(1);
+	position: relative;
+	background-color: var(--fourth-color);
+	padding: 20px;
+	transition: 0.5s;
+	border-radius: 50px;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+	margin: 0;
+	padding: 0;
+	width: 0;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+/* Menu expands when clicked */
+.nav input:checked ~ .menu {
+	width: fit-content;
+}
+
+.menu li {
+	list-style: none;
+	margin: 0 10px;
+}
+
+.menu li a {
+	font-size: 1em;
+	text-decoration: none;
+	color: var(--primary-color);
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: 0.5s;
+}
+
+/* Color of menu-text when mouse hover */
+.menu li a:hover {
+	color: var(--third-color);
+}
+
+.nav input {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	opacity: 0;
+}
+
+/* = Menu */
+.nav span {
+	position: absolute;
+	left: 30px;
+	width: 30px;
+	height: 4px;
+	border-radius: 50px;
+	background-color: #666;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.nav input:checked ~ span {
+	background-color: #f974a1;
+}
+
+/* Menu animation from = to x */
+.nav span:nth-child(2) {
+	transform: translateY(-8px);
+}
+.nav input:checked ~ span:nth-child(2) {
+	transform: translateY(0) rotate(-45deg);
+}
+.nav span:nth-child(3) {
+	transform: translateY(8px);
+}
+
+.nav input:checked ~ span:nth-child(3) {
+	transform: translateY(0) rotate(45deg);
+}
+
+/* Responsive Setting */
+@media only screen and (max-width: 768px) {
+	.nav {
+		transform: scale(0.6);
+	}
+}
+@media only screen and (max-width: 400px) {
+	.nav {
+		transform: scale(0.4);
+	}
+}
