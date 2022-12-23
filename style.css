@@ -55,6 +55,7 @@ body,
 	font-size: 1em;
 	text-decoration: none;
 	color: var(--primary-color);
+	/* If u don't want the text to be Capitalized, then delete text-transform: uppercase; below*/
 	text-transform: uppercase;
 	font-weight: 600;
 	transition: 0.5s;
