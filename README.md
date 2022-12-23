@@ -9,6 +9,8 @@ This is what will you get in this code...
 
 Navigation Bar Wrapping Horizontal, features:
 
+[HTML-CSS_NavigationBar-WrappingHorizontal.webm](https://user-images.githubusercontent.com/106858846/209331215-16c234f6-28b9-42ac-ba20-907bf2c763f3.webm)
+
 - Horizontally Wrapping and Expanding menus concept
 - No limit of how many menus can be added, recommendation: 3 - 5 menus
 - Auto adjusting length of navbar according to the number of menus
