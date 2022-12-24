@@ -19,6 +19,7 @@ Navigation Bar Wrapping Horizontal, features:
 - Easy to change the color of the web page and all the elements using ":root" CSS
 - Simple but attractive animation
 - Responsive and Adaptive on both PC and Mobile Screen
+- Explainable Source Code
 
 ---
 
